@@ -9,11 +9,10 @@ st.set_page_config(page_title="AI Code Auditor & Refactor", page_icon="🛡️",
 
 st.title("🛡️ LangGraph Sequential Code Auditor & Fixer")
 st.markdown("Automated Multi-Agent Pipeline: **Audit & Bug Scan ➔ Clean Refactor ➔ Comparison & Documentation**[cite: 1]")
-
 # Sidebar Configuration
 st.sidebar.header("⚙️ Configuration")
 api_key_input = st.sidebar.text_input("Gemini API Key", type="password", value=os.getenv("GOOGLE_API_KEY", ""))
-
+st.sidebar.markdown("🔗 [Get your Gemini API Key here](https://ai.google.dev/gemini-api/docs/api-key?utm_source=PMAX&utm_medium=display&utm_campaign=Cloud-SS-DR-AIS-FY26-global-pmax-1713578&utm_content=pmax&gad_source=1&gad_campaignid=23417432327&gbraid=0AAAAACn9t64YCK3TWTQZi_0VXxJXHmNe4&gclid=Cj0KCQjwhsrUBhDxARIsAN3AQSdNWiOxmuemSkI-bgwo2qk5alFWHrvsVDC1htPZtb2p6UYTCRUMjOkaArJkEALw_wcB)")
 if api_key_input:
     os.environ["GOOGLE_API_KEY"] = api_key_input
 
