@@ -8,7 +8,7 @@ load_dotenv()
 st.set_page_config(page_title="AI Code Auditor & Refactor", page_icon="🛡️", layout="wide")
 
 st.title("🛡️ LangGraph Sequential Code Auditor & Fixer")
-st.markdown("Automated Multi-Agent Pipeline: **Audit & Bug Scan ➔ Clean Refactor ➔ Comparison & Documentation**[cite: 1]")
+st.markdown("Automated Multi-Agent Pipeline: **Audit & Bug Scan ➔ Clean Refactor ➔ Comparison & Documentation**")
 # Sidebar Configuration
 st.sidebar.header("⚙️ Configuration")
 api_key_input = st.sidebar.text_input("Gemini API Key", type="password", value=os.getenv("GOOGLE_API_KEY", ""))
